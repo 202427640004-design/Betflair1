@@ -1,17 +1,13 @@
-# 📊 Fila de Apostas - BetFair
+# 📊 Sistema de Fila de Apostas - BetFair
 
-Este módulo adiciona ao projeto uma estrutura de **fila (FIFO)** para gerenciar apostas em ordem cronológica.
+Este módulo adiciona ao projeto BetFair uma **estrutura de dados do tipo Fila (FIFO)** para gerenciar apostas em ordem cronológica.
 
-## 📁 Arquivos adicionados
+---
 
-- `src/repositorios/RepositorioApostaFila.java` — implementação da fila.
-- `src/aplicacoes/Main.java` — método `testarFila()` para demonstração.
+## ⚙️ Como funciona
 
-## 🧪 Como testar
+- **Adicionar aposta** → vai para o final da fila.  
+- **Remover aposta** → sai do início da fila.  
+- **Listar apostas** → exibe todas as apostas na ordem correta.  
+- **Ver próxima aposta** → consulta o próximo item sem removê-lo.  
 
-1. Certifique-se de que `RepositorioApostaFila.java` está em `src/repositorios/`.
-2. Cole o método `testarFila()` no final do `Main.java`.
-3. Dentro do método `main()`, adicione:
-
-```java
-testarFila();
